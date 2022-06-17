@@ -21,7 +21,7 @@ public class ProfileCreateDTO {
     @NotEmpty(message = "Please provide a contact")
     private String contact;
     @NotBlank(message = "Please provide a  password")
-    @Size(min = 5, max = 15, message = "15 dan ko'p bo'lsa esingdan chiqadiku.")
+    @Size(min = 5, max = 15, message = "password min 5 max 15 ta bolishi kerak")
     private String password;
     @NotNull
     private ProfileRole role;
